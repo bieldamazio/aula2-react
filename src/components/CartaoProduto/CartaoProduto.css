@@ -1,0 +1,41 @@
+.cartao-produto {
+  width: 250px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+
+.cartao-produto:hover {
+  transform: scale(1.05);
+}
+
+.cartao-produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cartao-produto h2 {
+  margin: 15px 0 10px;
+  font-size: 22px;
+}
+
+.cartao-produto p {
+  font-size: 18px;
+  color: green;
+  font-weight: bold;
+}
+
+.cartao-produto button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
