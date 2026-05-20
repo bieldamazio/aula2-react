@@ -3,35 +3,40 @@ import "./App.css"
 import BoasVindas from "./components/BoasVindas/BoasVindas";
 import MensagemSecreta from "./components/MensagemSecreta/MensagemSecreta";
 import CartaoProduto from "./components/CartaoProduto/CartaoProduto";
+import ContadorEx from "./components/ContadorExercicio/ContadorEx";
+import Formulario from "./components/Formulario/Formulario";
 
 function App() {
   return (
     <div className="app">
-      <BoasVindas name="Gabriel"/>
+      <BoasVindas name="Cliente Especial"/>
       
-      <MensagemSecreta mensagem="123"/>
+      <MensagemSecreta mensagem="Fique a vontade para escolher sua próxima casa!"/>
 
       <div className="div-produtos">
 
         <CartaoProduto
-          nome="Notebook"
-          preco="R$ 13131"
-          imagem="/notebook.png"
+          nome="Casa Básica"
+          preco="R$ 9.999,99"
+          imagem="/casa-pobre.png"
         />
 
         <CartaoProduto
-          nome="Mouse"
-          preco="R$ 133"
-          imagem="/mouse.png"
+          nome="Casa Mediana"
+          preco="R$ 130.999,99"
+          imagem="/casa-mediana.png"
         />
 
         <CartaoProduto
-          nome="Fone de Ouvido"
-          preco="R$ 133"
-          imagem="/fone.png"
+          nome="Mansão Luxuosa"
+          preco="R$ 1.000.000.000,00"
+          imagem="/mansao.png"
         />
-
       </div>
+
+      <ContadorEx />
+
+      <Formulario />
     </div>
   );
 }
