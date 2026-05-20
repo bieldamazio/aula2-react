@@ -1,41 +1,48 @@
 .cartao-produto {
-  width: 250px;
+  width: 260px;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding-bottom: 20px;
+  padding: 20px;
   transition: 0.3s;
 }
 
 .cartao-produto:hover {
-  transform: scale(1.05);
+  scale: calc(1.025);
 }
 
 .cartao-produto img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .cartao-produto h2 {
-  margin: 15px 0 10px;
-  font-size: 22px;
+  margin-top: 15px;
+  font-size: 24px;
+  color: #222;
 }
 
 .cartao-produto p {
-  font-size: 18px;
+  margin-top: 10px;
+  font-size: 22px;
   color: green;
   font-weight: bold;
 }
 
 .cartao-produto button {
-  margin-top: 10px;
-  padding: 10px 20px;
+  margin-top: 20px;
+  padding: 12px 25px;
   border: none;
-  border-radius: 10px;
-  background-color: black;
+  border-radius: 12px;
+  background-color: #111;
   color: white;
   cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.cartao-produto button:hover {
+  background-color: #333;
 }

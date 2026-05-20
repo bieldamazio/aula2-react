@@ -6,11 +6,6 @@ const TituloUseState = ({cor}) => {
     const [texto, setTexto] = useState("Titulo Inicial");
     const [inputTexto, setInputTexto] = useState("");
 
-    // const mudarTexto = () => {
-    //     setTexto("Titulo Alterado pelo botao");
-    //     cor = "green";
-    // }
-
     const mudarTexto= () => {
         setTexto(inputTexto);
     }
@@ -31,7 +26,6 @@ const TituloUseState = ({cor}) => {
         onClick={() => mudarTexto()}
         > Mudar</button>
 
-          {/* <button onClick={()=> mudarTexto()} className="btn-mudar">Mudar</button> */}
     </div>
   
   )
